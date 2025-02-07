@@ -50,11 +50,15 @@ namespace LunaryRoll
             {
                 mensagemLogin.Text = "Login efetuado com sucesso";
                 mensagemLogin.ForeColor = Color.GreenYellow;
+                Menu form = new Menu();
+                form.ShowDialog();
             } else
             {
                 mensagemLogin.Text = "Usuário ou senha estão inválidas";
                 mensagemLogin.ForeColor= Color.OrangeRed;
             }
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -97,6 +101,11 @@ namespace LunaryRoll
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputSenha_TextChanged(object sender, EventArgs e)
         {
 
         }

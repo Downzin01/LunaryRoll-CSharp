@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace LunaryRoll
 {
-    public partial class Menu : Form
+    public partial class CadCliente : Form
     {
-        public Menu()
+        public CadCliente()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CadCliente form = new CadCliente();
-            form.ShowDialog();
         }
     }
 }

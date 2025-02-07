@@ -31,23 +31,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.inputUsuario = new System.Windows.Forms.TextBox();
-            this.inputSenha = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.buttonEntrar = new System.Windows.Forms.Button();
-            this.buttonLimpar = new System.Windows.Forms.Button();
+            this.imagemOlho = new System.Windows.Forms.PictureBox();
             this.mensagemLogin = new System.Windows.Forms.Label();
+            this.buttonLimpar = new System.Windows.Forms.Button();
+            this.buttonEntrar = new System.Windows.Forms.Button();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.inputUsuario = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.inputSenha = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.imagemOlho = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemOlho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemOlho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,51 +94,49 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label3
+            // imagemOlho
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(29, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Usuário";
+            this.imagemOlho.BackColor = System.Drawing.SystemColors.Window;
+            this.imagemOlho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imagemOlho.Image = global::LunaryRoll.Properties.Resources.fechar_o_olho;
+            this.imagemOlho.Location = new System.Drawing.Point(420, 89);
+            this.imagemOlho.Name = "imagemOlho";
+            this.imagemOlho.Size = new System.Drawing.Size(25, 20);
+            this.imagemOlho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imagemOlho.TabIndex = 4;
+            this.imagemOlho.TabStop = false;
+            this.imagemOlho.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // inputUsuario
+            // mensagemLogin
             // 
-            this.inputUsuario.Location = new System.Drawing.Point(32, 45);
-            this.inputUsuario.Name = "inputUsuario";
-            this.inputUsuario.Size = new System.Drawing.Size(413, 20);
-            this.inputUsuario.TabIndex = 1;
+            this.mensagemLogin.AutoSize = true;
+            this.mensagemLogin.Location = new System.Drawing.Point(282, 112);
+            this.mensagemLogin.Name = "mensagemLogin";
+            this.mensagemLogin.Size = new System.Drawing.Size(0, 13);
+            this.mensagemLogin.TabIndex = 5;
+            this.mensagemLogin.Click += new System.EventHandler(this.mensagemLogin_Click);
             // 
-            // inputSenha
+            // buttonLimpar
             // 
-            this.inputSenha.Location = new System.Drawing.Point(32, 89);
-            this.inputSenha.Name = "inputSenha";
-            this.inputSenha.PasswordChar = '*';
-            this.inputSenha.Size = new System.Drawing.Size(413, 20);
-            this.inputSenha.TabIndex = 1;
+            this.buttonLimpar.ForeColor = System.Drawing.Color.Black;
+            this.buttonLimpar.Location = new System.Drawing.Point(270, 245);
+            this.buttonLimpar.Name = "buttonLimpar";
+            this.buttonLimpar.Size = new System.Drawing.Size(95, 26);
+            this.buttonLimpar.TabIndex = 3;
+            this.buttonLimpar.Text = "Limpar Campos";
+            this.buttonLimpar.UseVisualStyleBackColor = true;
+            this.buttonLimpar.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label4
+            // buttonEntrar
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Senha";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.LightSkyBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(32, 115);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(102, 13);
-            this.linkLabel1.TabIndex = 2;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Esqueceu a senha?";
+            this.buttonEntrar.ForeColor = System.Drawing.Color.Black;
+            this.buttonEntrar.Location = new System.Drawing.Point(371, 245);
+            this.buttonEntrar.Name = "buttonEntrar";
+            this.buttonEntrar.Size = new System.Drawing.Size(95, 26);
+            this.buttonEntrar.TabIndex = 3;
+            this.buttonEntrar.Text = "Entrar";
+            this.buttonEntrar.UseVisualStyleBackColor = true;
+            this.buttonEntrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel2
             // 
@@ -152,36 +150,52 @@
             this.linkLabel2.Text = "Cadastra-se";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // buttonEntrar
+            // linkLabel1
             // 
-            this.buttonEntrar.ForeColor = System.Drawing.Color.Black;
-            this.buttonEntrar.Location = new System.Drawing.Point(371, 245);
-            this.buttonEntrar.Name = "buttonEntrar";
-            this.buttonEntrar.Size = new System.Drawing.Size(95, 26);
-            this.buttonEntrar.TabIndex = 3;
-            this.buttonEntrar.Text = "Entrar";
-            this.buttonEntrar.UseVisualStyleBackColor = true;
-            this.buttonEntrar.Click += new System.EventHandler(this.button1_Click);
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.LightSkyBlue;
+            this.linkLabel1.Location = new System.Drawing.Point(32, 115);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(102, 13);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Esqueceu a senha?";
             // 
-            // buttonLimpar
+            // inputUsuario
             // 
-            this.buttonLimpar.ForeColor = System.Drawing.Color.Black;
-            this.buttonLimpar.Location = new System.Drawing.Point(270, 245);
-            this.buttonLimpar.Name = "buttonLimpar";
-            this.buttonLimpar.Size = new System.Drawing.Size(95, 26);
-            this.buttonLimpar.TabIndex = 3;
-            this.buttonLimpar.Text = "Limpar Campos";
-            this.buttonLimpar.UseVisualStyleBackColor = true;
-            this.buttonLimpar.Click += new System.EventHandler(this.button2_Click);
+            this.inputUsuario.Location = new System.Drawing.Point(32, 45);
+            this.inputUsuario.Name = "inputUsuario";
+            this.inputUsuario.Size = new System.Drawing.Size(413, 20);
+            this.inputUsuario.TabIndex = 1;
             // 
-            // mensagemLogin
+            // label4
             // 
-            this.mensagemLogin.AutoSize = true;
-            this.mensagemLogin.Location = new System.Drawing.Point(282, 112);
-            this.mensagemLogin.Name = "mensagemLogin";
-            this.mensagemLogin.Size = new System.Drawing.Size(0, 13);
-            this.mensagemLogin.TabIndex = 5;
-            this.mensagemLogin.Click += new System.EventHandler(this.mensagemLogin_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(29, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Senha";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(29, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Usuário";
+            // 
+            // inputSenha
+            // 
+            this.inputSenha.Location = new System.Drawing.Point(32, 89);
+            this.inputSenha.Name = "inputSenha";
+            this.inputSenha.PasswordChar = '*';
+            this.inputSenha.Size = new System.Drawing.Size(413, 20);
+            this.inputSenha.TabIndex = 1;
+            this.inputSenha.TextChanged += new System.EventHandler(this.inputSenha_TextChanged);
             // 
             // pictureBox3
             // 
@@ -203,19 +217,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
-            // 
-            // imagemOlho
-            // 
-            this.imagemOlho.BackColor = System.Drawing.SystemColors.Window;
-            this.imagemOlho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imagemOlho.Image = global::LunaryRoll.Properties.Resources.fechar_o_olho;
-            this.imagemOlho.Location = new System.Drawing.Point(420, 89);
-            this.imagemOlho.Name = "imagemOlho";
-            this.imagemOlho.Size = new System.Drawing.Size(25, 20);
-            this.imagemOlho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imagemOlho.TabIndex = 4;
-            this.imagemOlho.TabStop = false;
-            this.imagemOlho.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -246,9 +247,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemOlho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagemOlho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
