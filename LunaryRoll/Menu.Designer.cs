@@ -76,7 +76,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(113, 57);
             this.button3.TabIndex = 3;
-            this.button3.Text = "Ecluir Cliente";
+            this.button3.Text = "Excluir Cliente";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
