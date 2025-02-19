@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadCliente));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.maskedTextBoxData = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxCPF = new System.Windows.Forms.MaskedTextBox();
+            this.textBoxComplemento = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxCasa = new System.Windows.Forms.TextBox();
+            this.textBoxRua = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLimpar = new System.Windows.Forms.Button();
+            this.buttonCadastroCli = new System.Windows.Forms.Button();
             this.maskedTextBoxTel = new System.Windows.Forms.MaskedTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,16 +63,16 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gray;
-            this.groupBox1.Controls.Add(this.maskedTextBox3);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.maskedTextBoxData);
+            this.groupBox1.Controls.Add(this.maskedTextBoxCPF);
+            this.groupBox1.Controls.Add(this.textBoxComplemento);
+            this.groupBox1.Controls.Add(this.textBoxEmail);
             this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBoxCasa);
+            this.groupBox1.Controls.Add(this.textBoxRua);
             this.groupBox1.Controls.Add(this.textBoxNome);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonLimpar);
+            this.groupBox1.Controls.Add(this.buttonCadastroCli);
             this.groupBox1.Controls.Add(this.maskedTextBoxTel);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
@@ -83,41 +83,41 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(226, 150);
+            this.groupBox1.Location = new System.Drawing.Point(256, 149);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(463, 319);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // maskedTextBox3
+            // maskedTextBoxData
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(141, 241);
-            this.maskedTextBox3.Mask = "00/00/0000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(188, 20);
-            this.maskedTextBox3.TabIndex = 26;
+            this.maskedTextBoxData.Location = new System.Drawing.Point(141, 241);
+            this.maskedTextBoxData.Mask = "0000/00/00";
+            this.maskedTextBoxData.Name = "maskedTextBoxData";
+            this.maskedTextBoxData.Size = new System.Drawing.Size(188, 20);
+            this.maskedTextBoxData.TabIndex = 26;
             // 
-            // maskedTextBox1
+            // maskedTextBoxCPF
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(40, 208);
-            this.maskedTextBox1.Mask = "000,000,000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(188, 20);
-            this.maskedTextBox1.TabIndex = 25;
+            this.maskedTextBoxCPF.Location = new System.Drawing.Point(40, 208);
+            this.maskedTextBoxCPF.Mask = "000,000,000-00";
+            this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
+            this.maskedTextBoxCPF.Size = new System.Drawing.Size(188, 20);
+            this.maskedTextBoxCPF.TabIndex = 25;
             // 
-            // textBox7
+            // textBoxComplemento
             // 
-            this.textBox7.Location = new System.Drawing.Point(104, 151);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(188, 20);
-            this.textBox7.TabIndex = 24;
+            this.textBoxComplemento.Location = new System.Drawing.Point(104, 151);
+            this.textBoxComplemento.Name = "textBoxComplemento";
+            this.textBoxComplemento.Size = new System.Drawing.Size(188, 20);
+            this.textBoxComplemento.TabIndex = 24;
             // 
-            // textBox6
+            // textBoxEmail
             // 
-            this.textBox6.Location = new System.Drawing.Point(51, 271);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(188, 20);
-            this.textBox6.TabIndex = 23;
+            this.textBoxEmail.Location = new System.Drawing.Point(51, 271);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(188, 20);
+            this.textBoxEmail.TabIndex = 23;
             // 
             // textBox5
             // 
@@ -126,19 +126,19 @@
             this.textBox5.Size = new System.Drawing.Size(188, 20);
             this.textBox5.TabIndex = 22;
             // 
-            // textBox4
+            // textBoxCasa
             // 
-            this.textBox4.Location = new System.Drawing.Point(52, 121);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(188, 20);
-            this.textBox4.TabIndex = 21;
+            this.textBoxCasa.Location = new System.Drawing.Point(52, 121);
+            this.textBoxCasa.Name = "textBoxCasa";
+            this.textBoxCasa.Size = new System.Drawing.Size(188, 20);
+            this.textBoxCasa.TabIndex = 21;
             // 
-            // textBox3
+            // textBoxRua
             // 
-            this.textBox3.Location = new System.Drawing.Point(45, 94);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(188, 20);
-            this.textBox3.TabIndex = 20;
+            this.textBoxRua.Location = new System.Drawing.Point(45, 94);
+            this.textBoxRua.Name = "textBoxRua";
+            this.textBoxRua.Size = new System.Drawing.Size(188, 20);
+            this.textBoxRua.TabIndex = 20;
             // 
             // textBoxNome
             // 
@@ -147,23 +147,25 @@
             this.textBoxNome.Size = new System.Drawing.Size(188, 20);
             this.textBoxNome.TabIndex = 19;
             // 
-            // button2
+            // buttonLimpar
             // 
-            this.button2.Location = new System.Drawing.Point(337, 121);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 36);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Limpar Dados";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonLimpar.Location = new System.Drawing.Point(337, 121);
+            this.buttonLimpar.Name = "buttonLimpar";
+            this.buttonLimpar.Size = new System.Drawing.Size(85, 36);
+            this.buttonLimpar.TabIndex = 18;
+            this.buttonLimpar.Text = "Limpar Dados";
+            this.buttonLimpar.UseVisualStyleBackColor = true;
+            this.buttonLimpar.Click += new System.EventHandler(this.buttonLimpar_Click);
             // 
-            // button1
+            // buttonCadastroCli
             // 
-            this.button1.Location = new System.Drawing.Point(337, 159);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 36);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Cadastar Cliente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonCadastroCli.Location = new System.Drawing.Point(337, 159);
+            this.buttonCadastroCli.Name = "buttonCadastroCli";
+            this.buttonCadastroCli.Size = new System.Drawing.Size(85, 36);
+            this.buttonCadastroCli.TabIndex = 17;
+            this.buttonCadastroCli.Text = "Cadastar Cliente";
+            this.buttonCadastroCli.UseVisualStyleBackColor = true;
+            this.buttonCadastroCli.Click += new System.EventHandler(this.buttonCadastroCli_Click);
             // 
             // maskedTextBoxTel
             // 
@@ -199,9 +201,9 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(7, 210);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(27, 16);
+            this.label8.Size = new System.Drawing.Size(33, 16);
             this.label8.TabIndex = 6;
-            this.label8.Text = "Cpf";
+            this.label8.Text = "CPF";
             // 
             // label7
             // 
@@ -268,7 +270,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(304, 55);
+            this.label1.Location = new System.Drawing.Point(332, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(309, 32);
             this.label1.TabIndex = 1;
@@ -278,9 +280,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(223, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(234, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 88);
+            this.pictureBox2.Size = new System.Drawing.Size(96, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -289,9 +291,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(616, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(641, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(96, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -300,7 +302,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(25, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(47, 49);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -316,9 +318,10 @@
             this.ClientSize = new System.Drawing.Size(939, 491);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadCliente";
             this.Text = "CadCliente";
             this.groupBox1.ResumeLayout(false);
@@ -348,15 +351,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxTel;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button buttonLimpar;
+        private System.Windows.Forms.Button buttonCadastroCli;
+        private System.Windows.Forms.TextBox textBoxComplemento;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxCasa;
+        private System.Windows.Forms.TextBox textBoxRua;
         private System.Windows.Forms.TextBox textBoxNome;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxData;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxCPF;
     }
 }

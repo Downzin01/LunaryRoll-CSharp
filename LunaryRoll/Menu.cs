@@ -17,12 +17,12 @@ namespace LunaryRoll
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonFechar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCadCli_Click(object sender, EventArgs e)
         {
             CadCliente form = new CadCliente();
             form.ShowDialog();
