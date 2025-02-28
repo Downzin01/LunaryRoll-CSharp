@@ -27,5 +27,11 @@ namespace LunaryRoll
             CadCliente form = new CadCliente();
             form.ShowDialog();
         }
+
+        private void buttonPesquisarCli_Click(object sender, EventArgs e)
+        {
+            ConsultaCli form = new ConsultaCli();
+            form.ShowDialog();
+        }
     }
 }
